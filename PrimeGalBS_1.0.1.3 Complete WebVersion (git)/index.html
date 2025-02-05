@@ -1,0 +1,49 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>AA | SortMemberBS</title>
+	<link rel="icon" href="image/favicon.ico" type="image/x-icon">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+
+<body>
+	<div class="wrapper">
+		<div class="main_wrapper">
+			<div class="wrapper_mute">
+				<div class="front">
+					<p style="text-align: center;">AA | SortMemberBS-v1.0.1.3 (WEB)</p>
+					<button onclick="openSite()" class='buttonStyle'>Открыть сайт</button>
+					<input type="file" id="upload" class='buttonStyle'>
+					<p style="text-decoration: underline; text-align: center;">*Возможны ошибки в распознавании текста/ников*</p>
+				</div>
+				<div class="front">
+					<p id="outputBxxxx">Загруженный список:</p>
+					<p id="outputBx"></p>
+				</div>
+				<div class="front">
+					<button onclick="refreshText()" class='buttonStyle'>Отредактировать</button>
+					<p>Отредактированный список:</p>
+					<p id="outputBxs"></p>
+					<p id="outputBxs1"></p>
+				</div>
+				<!-- <button onclick="sortText()">Отсортировать</button>
+				<p>Отсортированный список BS:</p>
+				<p id="outputBxss"></p>
+				<p id="outputBxss1"></p> -->
+				<!-- <hr>  -->
+				<div class="front">
+					<button onclick="fullNames()" class='buttonStyle'>Дополнить имена и отсортировать</button>
+					<p>Отсортированный список BS:</p>
+					<p id="outputBxsss"></p>
+					<p id="outputBxsss1"></p>
+					<button onclick="copyText()" class='buttonStyle'>Скопировать текст</button>
+					<p id="sucCopy" style="text-align: center;"></p>
+				</div>
+			</div>
+		</div>
+		<p style="margin-top: 10%; color : #661d1d">RS</p>
+	</div>
+<script src="main.js"></script>
+</body>
+
+</html>
