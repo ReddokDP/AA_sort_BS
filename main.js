@@ -8,26 +8,22 @@ let countSort = document.getElementById('outputBxss1')
 let outputBx3 = document.getElementById('outputBxsss')
 let countSort1 = document.getElementById('outputBxsss1')
 let textSucCopy = document.getElementById('sucCopy')
+let listMember = document.getElementById('listMember')
 
 
 //Нужные переменные для общего скоупа.
 let someFileText;
 let resultT;
 
-//Загрузка текстового файлы на чтение.
-upload.addEventListener("change", () => {
-	let fr = new FileReader();
-		fr.readAsText(upload.files[0])
-		fr.onload = function(){
-		outputBx.innerHTML = fr.result
-		someFileText = fr.result
-	}
-})
+
+listMember.oninput = function() {
+	someFileText = outputBx.textContent = listMember.value
+}
+
 
 //Форматирование текста от всяких цифр, знаков.
 function refreshText() {
 	let alltext = someFileText.replace(/[0-9]/g, "").replace(/\n/g, " ").split(" ").filter(function(el) {return el != ""})  //replace(/[.]/g, "")
-	//alltext1 = Object.values(alltext)
 	outputBx1.textContent = alltext
 	countRed.textContent = `Всего в рейде - ${alltext.length}.`
 	console.log(typeof alltext, `Вывод замен символов - ${alltext}`)
