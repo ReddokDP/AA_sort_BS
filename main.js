@@ -172,9 +172,10 @@ function fullNames() {
 		completeName.push(fullName)
 		const completeNameSort = completeName.filter(el => el !== undefined)
 		// console.log(`Итерация - ${completeNameSort}`)
-		console.log(completeNameSort)
-		outputBx3.textContent = completeNameSort
-		countSort1.textContent = `Всего в рейде - ${completeNameSort.length}.`
+		let notTwice = [...new Set(completeNameSort)]
+		console.log(notTwice)
+		outputBx3.innerText = notTwice
+		countSort1.textContent = `Всего в рейде - ${notTwice.length}.`
 	})
 }
 
