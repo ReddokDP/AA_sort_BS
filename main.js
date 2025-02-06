@@ -85,6 +85,7 @@ function fullNames() {
 		'Aquil' : 'Aquil',
 		'Ligas' : 'Ligas',
 		'Qiroid' : 'Qiroid',
+		'Qirold' : 'Qiroid',
 		'Курля' : 'Курля',
 		'Кур' : 'Курля',
 		'Kyp' : 'Курля',
