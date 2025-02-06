@@ -76,3 +76,21 @@ body {
     border: none;
     background-color: #81251f;
 }
+
+
+.input_text {
+    text-align: center;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #af5252;
+    border-radius: 5px;
+    font-size: 14px;
+    background-image: linear-gradient(to right, #81251f 0%, #69362d 51%, #614b46 100%);
+    height: 150px;
+}
+
+.input_text::placeholder {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
